@@ -1,0 +1,55 @@
+**************Mostrar productos por Id**********************
+DELIMITER $$ 
+CREATE PROCEDURE MostrarProductos(productoID INT) 
+BEGIN 
+SELECT * FROM productos
+WHERE ID_Producto=productoID; 
+END $$ 
+DELIMITER ;
+
+***********Mostrar productos por nombre*********************
+DELIMITER $$ 
+CREATE PROCEDURE MostrarProductosPorNombre(vchDescripcion varchar(20)) 
+BEGIN 
+SELECT * FROM productos
+WHERE Descripcion=vchDescripcion; 
+END $$ 
+DELIMITER ;
+
+***********Mostrar productos por precio*********************
+DELIMITER $$ 
+CREATE PROCEDURE MostrarProductosPorPrecio(fPrecio float) 
+BEGIN 
+SELECT * FROM productos
+WHERE Precio=fPrecio; 
+END $$ 
+DELIMITER ;
+
+***********Mostrar cliente pro id***************************
+DELIMITER $$ 
+CREATE PROCEDURE MostrarClientesPorId(iId int) 
+BEGIN 
+SELECT * FROM clientes
+WHERE ID_Cliente=iId; 
+END $$ 
+DELIMITER ;
+
+***********Mostrar cliente por nombre***********************
+DELIMITER $$ 
+CREATE PROCEDURE MostrarClientesPorNombre(vchNombre varchar(50)) 
+BEGIN 
+SELECT * FROM clientes
+WHERE Nombre=vchNombre; 
+END $$ 
+DELIMITER ;
+
+***********Mostrar clientes por email***********************
+DELIMITER $$ 
+CREATE PROCEDURE MostrarClientesPorEmail(vchEmail varchar(20)) 
+BEGIN 
+SELECT * FROM clientes
+WHERE Email=vchEmail; 
+END $$ 
+DELIMITER ;
+
+

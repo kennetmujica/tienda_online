@@ -1,0 +1,120 @@
+* {
+margin: 0px; /* Margen entre el texto (arriba hacía abajo) */
+padding: 0px; /* Margen entre la orilla izquierda a derecha */
+} /* Lo hacemos para darle una vista general a la página */
+
+h1 { /* Agregamos estilos a los titulos del documento, para hacerlo más formal */
+	font: bold 20px verdana, sans-serif;
+}
+
+h2 {
+	font: bold 14px verdana,sans-serif;
+}
+
+header, section, footer, aside, nav, article, figure, figcaption,
+hgroup{
+display: block;
+} /* Con esto declaramos que nuestra estructura se manejara en bloques */
+
+body {
+	text-align: center; /* Alineamos el texto al centro de la página */
+}
+ /* El # indica que se afectará los elementos con el id=agrupar */
+#agrupar { /* Tenemos nuestro div principal que junta a todos los elementos, por lo tanto, le damos una
+	forma general, así afecta a todo lo que esta dentro de */
+	width: 960px;
+	margin: 15px auto;
+	text-align: left;
+}
+
+#cabecera { /* Modificamos la cabecera de nuestra página web */
+	background:#FFFBB9;
+	border: 1px solid #999999;
+	padding: 20px; /* 20 pixeles de margen de la orilla */
+}
+
+#menu { /* Afecta el bloque de nav */
+	background: #CCCCCC; /* Color gris */
+	padding: 5px 15px; /* El 1er valor es para el grosor del recuadro de color, el 2do es para el texto */
+}
+/*La propiedad padding trabaja exactamente como margin. Cuatro valores pueden ser especificados:
+superior, derecho, inferior, izquierdo, en este orden. Si solo declaramos un valor, el mismo será asignado
+para todos los espacios alrededor del contenido del elemento. */
+
+#menu li { /* Usamos el "li", ya que, en este apartado se tiene una lista con información apilada de manera
+vertical, por lo tanto, para modificar la lista se utiliza li */
+	display: inline-block; /* para convertirlos en lo que se llama cajas inline. */
+	list-style: none; /* Esto lo usamos para eliminar un estilo que viene por defecto y que algunos
+	navegadores detectan */
+	padding: 5px;
+	font: bold 14px verdana, sans-serif;
+}
+
+#seccion { /* Se modifica la seccion, que es la parte principal del cuerpo */
+	float: left; /* Usando la propiedad float podemos posicionar estas cajas del lado izquierdo
+	o derecho de acuerdo a nuestras necesidades. */
+	width: 660px;
+	margin: 20px;
+}
+
+#pie { /* Modificamos el footer para darle una apariencia centrada y por debajo de los demás elementos */
+	clear: both; /* Esto, para un elemento block, quiere decir que será posicionado debajo del
+último elemento, en una nueva línea. */
+	text-align: center;
+	padding: 20px; /* un margen interno (padding) de 20 pixeles */
+	border-top: 2px solid #999999; /* declara un borde de 2 pixeles en la parte superior de <footer> */
+}
+
+.boton_salir{
+	text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+  }
+}
+
+article { /* Modificamos la informacion dentro de los articulos */
+	background: #FFFBCC; /* Color amarillo */
+	border: 1px solid #999999; /* Agregamos un borde color gris */
+	padding: 20px; /* Ponemos un margen de orilla de 20px */
+	margin-bottom: 15px; /* Agregamos una separacion entre los siguientes articulos */
+}
+
+article footer { /* Modificamos el footer de los articulos */
+	text-align: right; /*Esta informacion la recorremos al lado derecho */
+}
+
+time { /* Modificamos la fecha */
+	color: #999999; /* Color gris */
+}
+
+figcaption { /* Modificamos la parte de las imagenes */
+	font: italic 14px verdana, sans-serif; /*Agregamos una fuente manuscrita de 14px, fuente verdana */
+}
+
+div { /* Modificamos los elementos div */
+	width: 100px; /* agregamos ancho */
+	margin: 20px; /* Margen de arriba hacia abajo de 20px */ 
+	padding: 10px; /* Nargen lateral de 10px */
+	border: 1px solid #000000; /*Un borde con color negro */
+
+	-moz-box-sizing: border-box; /* La propiedad box-sizing puede tomar dos valores. Por defecto es 
+	configurada como content-box, lo que significa que los navegadores agregarán los valores de padding 
+	y border al tamaño especificado por width y height. Usando el valor border-box en su lugar, este 
+	comportamiento es cambiado de modo que padding y border son incluidos dentro del elemento. */
+	-webkit-box-sizing: border-box; /* webkit es para que el navegador interprete el cod css debidamente*/
+	box-sizing: border-box;
+
+/*
+-moz- para Firefox.
+-webkit- para Safari y Chrome.
+-o- para Opera.
+-khtml- para Konqueror.
+-ms- para Internet Explorer.
+-chrome- específico para Google Chrome.
+*/
+}

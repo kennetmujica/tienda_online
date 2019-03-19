@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <center>  <h1>Administracion</h1> </center>
+        <form class="Agregar" action="Agregar.php" method="post">
+                <fieldset>
+                    <legend>Altas</legend>
+                    <label for="descripcion">Descripcion: </label>
+                    <input type="text" name="descripcion" autocomplete="off"> <br><br>
+                    <label for="existencia">Existencia: :</label>
+                    <input type="text" name="existencia" autocomplete="off">  <br><br>
+                    <label for="precio">Precio: </label>
+                    <input type="text" name="precio" autocomplete="off"> <br><br>
+                    <input type="submit" value="Guardar">
+                </fieldset> <br><br>
+        </form>
+
+        <form class="Eliminar" action="Eliminar.php" method="post">
+                    <fieldset>
+                          <legend>Bajas</legend>
+                          <label for="ID_Producto">ID del Producto: </label>
+                          <input type="text" name="ID_Producto" autocomplete="off"> <br><br>
+                          <input type="submit" value="Eliminar">
+                    </fieldset> <br><br>
+        </form>
+
+        <form class="" action="Cambios.php" method="post">
+                    <fieldset>
+                        <legend>Cambios</legend>
+                        <label for="ID_Producto">ID del Producto:</label>
+                        <input type="text" name="ID_Producto" autocomplete="off"> <br><br>
+                        <input type="submit" value="Buscar">
+                    </fieldset> <br><br>
+        </form>
+
+        <form class="" action="Mostrar.php" method="post">
+                    <fieldset>
+                        <legend>Demostraciones</legend>
+                        <h4>Mostrar producto por Id</h4>
+                        <label for="idProducto">ID del Producto:</label>
+                        <input type="text" name="idProducto" autocomplete="off"> <br><br>
+                        <input type="submit" name="operacion" value="mostrar1">
+       </form>
+       <form class="" action="Mostrar.php" method="post">
+                        <h4>Mostrar producto por Nombre</h4>
+                        <label for="nombreProducto">Nombre del Producto:</label>
+                        <input type="text" name="nombreProducto" autocomplete="off"> <br><br>
+                        <input type="submit" name="operacion" value="mostrar2">
+       </form>
+       <form class="" action="Mostrar.php" method="post">
+                        <h4>Mostrar producto por Precio</h4>
+                        <label for="precioProducto">Precio del Producto:</label>
+                        <input type="text" name="precioProducto" autocomplete="off"> <br><br>
+                        <input type="submit" name="operacion" value="mostrar3">
+       </form>
+       <form class="" action="Mostrar.php" method="post">
+                        <h4>Mostrar cliente por ID</h4>
+                        <label for="idCliente">Id del Cliente:</label>
+                        <input type="text" name="idCliente" autocomplete="off"> <br><br>
+                        <input type="submit" name="operacion" value="mostrar4">
+       </form>
+       <form class="" action="Mostrar.php" method="post">
+                        <h4>Mostrar cliente por Nombre</h4>
+                        <label for="nombreCliente">Nombre del Cliente:</label>
+                        <input type="text" name="nombreCliente" autocomplete="off"> <br><br>
+                        <input type="submit" name="operacion" value="mostrar5">
+       </form>
+       <form class="" action="Mostrar.php" method="post">
+                        <h4>Mostrar cliente por Email</h4>
+                        <label for="emailCliente">Email del Cliente:</label>
+                        <input type="text" name="emailCliente" autocomplete="off"> <br><br>
+                        <input type="submit" name="operacion" value="mostrar6">
+       </form>
+                    </fieldset> <br><br>
+
+  </body>
+</html>
